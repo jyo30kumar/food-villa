@@ -6,8 +6,8 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    background: url("./images/body-bg.png") no-repeat;
-    background-size: cover;
+    background: url("./images/body-bg.png");
+    background-size: fill;
     position: relative;
 }
 a{
@@ -431,7 +431,7 @@ select:hover{
 }
 .footer-box{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
     gap: 7px;
     text-align: justify;
     font-size: 1rem;
