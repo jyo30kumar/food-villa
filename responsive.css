@@ -252,16 +252,22 @@
     .footer-wrapper{
         flex-basis: 95%;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-box{
+        font-size: 0.7rem;
     }
     .footer-box h1{
         font-size: 1rem;
     }
     .footer-contact{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30px;
         gap: 10px;
+        grid-row:2;
+        grid-column: 2/span 2;
     }
     .footer-contact .fa{
         font-size: 1rem;
@@ -287,16 +293,17 @@
         grid-column: span 1;
     }
     .menu-wrapper > li > a{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .middle-home-wrapper{
-        grid-template-rows:200px 100px;
+        grid-template-rows:165px 100px;
         grid-template-columns:360px;
         gap:20px;
     }
     .middle-home-wrapper > h1{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         line-height: 40px;
+        letter-spacing: 0;
     }
     .middle-home-wrapper button{
         flex-basis: 40%;
@@ -305,28 +312,30 @@
     }
     .bottom-home-wrapper{
         flex-basis: 95%;
-        grid-template-rows: 45px auto;
-        grid-template-columns: 30% 65%;
+        grid-template-rows: 35px auto;
+        grid-template-columns: 30% 60%;
+        gap:5px;
     }
     .dropdown-category > select{
-        padding: 8px 10px;
-        font-size: 1rem;
+        padding: 4px 5px;
+        font-size: 0.8rem;
     }
     .search-bar{
-        padding: 10px 10px;
+        padding: 10px 5px;
     }
     .search-bar > input{
-        font-size: 1rem;
-        padding: 15px 0;
+        font-size: 0.8rem;
+        padding: 10px 0;
     }
     .search-bar > .fa{
         font-size: 1rem;
     }
     .order-now a{
+        margin-top: 10px;
         font-size: 1.2rem;
         background-color: #8eb50b;
-        padding: 10px 25px;
-        font-weight: 200;
+        padding: 5px 20px;
+        font-weight: 100;
     }
     .service-wrapper{
         padding-top: 80px;
@@ -407,7 +416,8 @@
     .footer-wrapper{
         flex-basis: 95%;
         justify-content: center;
-        gap: 2px;
+        gap: 10px;
+        grid-template-columns: repeat(2,1fr);
     }
     .footer-box{
         font-size: 0.7rem;
@@ -417,9 +427,11 @@
     }
     .footer-contact{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 10px;
+        grid-row:3;
+        grid-column: 1/span 2;
     }
     .footer-contact .fa{
         font-size: 1rem;
