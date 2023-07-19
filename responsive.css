@@ -59,7 +59,7 @@
     }
     .service-middle{
         flex-basis: 100%;
-        grid-template-columns: repeat(3,200px);
+        grid-template-columns: repeat(3,1fr);
         justify-content: center;
         gap:20px;
     }
@@ -199,7 +199,8 @@
     }
     .blog-middle{
         grid-template-columns: 80%;
-        grid-template-rows: 300px 250px 300px 250px 300px 250px;
+        grid-template-rows: repeat(6,300px);
+        /*grid-template-rows: 300px 250px 300px 250px 300px 250px;*/
         gap: 10px;
         line-height: 20px;
         justify-content: center;
